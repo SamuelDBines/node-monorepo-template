@@ -1,0 +1,24 @@
+{
+  "name": "codemonorepo",
+  "version": "1.0.0",
+  "description": "All code I write from now on should go in here",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run -w packages dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run -w packages build"
+  },
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ]
+  },
+  "author": "Samuel Bines",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "eslint": "^9.17.0",
+    "eslint-plugin-unused-imports": "^4.1.4"
+  }
+}
