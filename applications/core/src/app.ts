@@ -13,4 +13,14 @@ app.use('/api', (req, res, next) => {
   next();
 });
 
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
+
+app.use('/not-found', (req, res, next) => {
+  res.status(404).send('Not Found');
+});
+
+
+
 export default app;

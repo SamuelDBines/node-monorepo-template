@@ -17,7 +17,7 @@
     "allowSyntheticDefaultImports": true /* Allow 'import x from y' when a module doesn't have a default export. */,
     "esModuleInterop": true,
     "paths": {
-      "@lms": [
+      "@packages": [
         "./packages"
       ]
     }

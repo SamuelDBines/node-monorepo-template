@@ -9,7 +9,7 @@ const sequelize = new Sequelize(process.env.DATABASE_URL || 'sqlite::memory:', {
 // Sync database models
 sequelize.sync();
 
-const sequelizeDatabaseClient: DatabaseClient = {
+export const sequelizeDatabaseClient: DatabaseClient = {
   async findUsers(): Promise<User[]> {
     return UserModel.findAll();
   },
@@ -20,5 +20,3 @@ const sequelizeDatabaseClient: DatabaseClient = {
     return UserModel.create(user);
   },
 };
-
-export default sequelizeDatabaseClient;
