@@ -24,7 +24,6 @@ describe('users', () => {
       const response = await request(app).get('/api/users');
       expect(response.status).toBe(200);
     });
-
   });
 
 });
