@@ -1,0 +1,22 @@
+{
+  "name": "@packages/sequalize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc --incremental",
+    "watch": "tsc -W --preserveWatchOutput --incremental",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samuel Bines",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2"
+  }
+}
