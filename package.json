@@ -8,7 +8,10 @@
     "test": "npm run build && npm run test -w applications/core",
     "build": "npm run -w packages build && npm run build -w applications/core",
     "dev:core": "npm run -w applications/core dev",
-    "dev:frontend": "npm run -w applications/mainui dev"
+    "dev:frontend": "npm run -w applications/mainui dev",
+    "prisma:migrate": "npm run -w packages/prisma migrate",
+    "prisma:generate": "npm run -w packages/prisma generate",
+    "prisma:init": "npm run -w packages/prisma init"
   },
   "workspaces": {
     "packages": [
